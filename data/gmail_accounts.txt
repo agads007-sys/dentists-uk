@@ -1,0 +1,16 @@
+# Gmail draft account mapping
+# Shared across all country campaigns. Never store app-password values here.
+
+gmail1 | michaeldk2026@gmail.com | GMAIL1_APP_PASSWORD
+gmail2 | michaeldk.contact@gmail.com | GMAIL2_APP_PASSWORD
+gmail3 | michaeldk900@gmail.com | GMAIL3_APP_PASSWORD
+gmail4 | elizabethberg2021@gmail.com | GMAIL4_APP_PASSWORD
+gmail5 | michael2026dk@gmail.com | GMAIL5_APP_PASSWORD
+gmail6 | michaelbdk2026@gmail.com | GMAIL6_APP_PASSWORD
+gmail7 | michaelbdk2025@gmail.com | GMAIL7_APP_PASSWORD
+gmail8 | michaeldb2025@gmail.com | GMAIL8_APP_PASSWORD
+gmail9 | michaeldkb2025@gmail.com | GMAIL9_APP_PASSWORD
+gmail10 | michaelbdk2021@gmail.com | GMAIL10_APP_PASSWORD
+
+# Rule: spread each run across all 10 available Gmail accounts as evenly as practical.
+# Drafts only. Never send automatically.
