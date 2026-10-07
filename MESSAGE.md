@@ -20,9 +20,13 @@ Every prospect must satisfy ALL of these conditions:
 6. An appropriate contact email must be officially published by the practice or its official organisation. Never guess an address.
 7. Before selection, both the practice name and email address must be checked against the campaign exclusion log and the in-memory exclusions for the current run.
 
-Among readily available eligible prospects, prefer lower review counts. Do not spend extra time hunting for a 3-review practice when an otherwise good 8-review practice is already verified.
+Speed rule: once a prospect satisfies every mandatory condition and is quickly verifiable, select it and move to drafting. Lower review counts are only a preference among readily available eligible prospects. Never continue searching solely to replace an already valid prospect with one that has fewer reviews.
 
 Visible marketing activity is only a secondary prioritisation signal. If active advertising, promotional pages, cosmetic treatment marketing, SEO/local landing pages, active social media or strong booking calls-to-action are obvious during normal verification, that can favour a prospect. Do not perform separate marketing research just to score prospects. Never invent marketing activity.
+
+Do not build or calculate a lead score. Do not add extra research dimensions that are not required by this file.
+
+The practice must appear currently active during normal verification. If it is clearly permanently closed, inactive, no longer operating normally, or clearly not accepting patients, skip it. Do not perform a separate investigation just to establish activity.
 
 If any mandatory detail is difficult to verify quickly, skip the candidate and move on.
 
@@ -166,6 +170,8 @@ Good:
 
 A batch must not contain five near-identical emails.
 
+Within the same batch, no two drafts may reuse the same opening sentence, review-gap paragraph, product-introduction sentence, conviction sentence or CTA verbatim.
+
 Vary naturally:
 - the opening
 - the way the review gap is described
@@ -175,6 +181,15 @@ Vary naturally:
 - the low-effort sentence
 - the conviction sentence
 - the CTA
+
+Vary subject lines naturally as well. Do not use one subject line for every draft. Keep subjects short, plain and human. Suitable patterns include:
+- Quick question about your Google reviews
+- Your Google reviews
+- Your practice on Google
+- A quick thought on your Google profile
+- A question about your Google profile
+
+Do not force every subject to be different if that would make it unnatural, but avoid obvious batch repetition.
 
 Do not create variation by inventing facts.
 
@@ -214,6 +229,7 @@ Confirm:
 - Dentist / orthodontist / dental practice only
 - Current Google review count between 2 and 25 inclusive
 - Exact count verified
+- Practice appears currently active
 - Officially published contact email
 - Name and email not excluded
 - Same mandatory sales skeleton and order
