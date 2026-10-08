@@ -94,7 +94,7 @@ Every email must preserve this exact logical order. Natural wording may vary, bu
 10. Emphasise that this requires almost no work from the practice.
 11. State with genuine conviction that consistent use can make a meaningful difference to the practice's Google presence over time.
 12. Michael sets everything up and handles the rest.
-13. State the exact price: **£34 per month**.
+13. State the exact price as **34 per month**. The outbound email must contain the number only.
 14. State that there is no long-term commitment.
 15. End with a short, natural question offering to show how it works.
 16. Sign exactly:
@@ -103,6 +103,23 @@ Best,
 Michael Berg
 
 Never reorder the pitch into a different sales argument.
+
+## ABSOLUTE PRICE FORMATTING RULE
+
+This rule is absolute and overrides every example or wording preference.
+
+In the outbound email, write the monthly price using ONLY the number followed by "per month".
+
+Never include any currency symbol, currency code, currency abbreviation or currency name anywhere in the subject or body.
+
+Do not write dollar signs, pound signs, euro signs, AUD, GBP, EUR, NZD, USD, dollars, pounds, euros or any other currency marker.
+
+Correct format:
+"34 per month"
+
+Incorrect formats include any version that identifies the currency.
+
+Before creating a Gmail draft, scan the entire subject and body. If any currency symbol, currency code, abbreviation or currency name appears, rewrite it before saving the draft.
 
 Never promise a specific Google position, number of patients, number of reviews or revenue increase.
 
@@ -182,14 +199,20 @@ Vary naturally:
 - the conviction sentence
 - the CTA
 
-Vary subject lines naturally as well. Do not use one subject line for every draft. Keep subjects short, plain and human. Suitable patterns include:
-- Quick question about your Google reviews
-- Your Google reviews
-- Your practice on Google
-- A quick thought on your Google profile
-- A question about your Google profile
+Vary subject lines naturally as well. Subjects must always be short, neutral, plain and human.
 
-Do not force every subject to be different if that would make it unnatural, but avoid obvious batch repetition.
+NEVER mention Google, reviews, ratings, reputation, SEO, the offer, the product or the price in the subject line.
+
+Suitable neutral subject patterns include:
+- Quick question
+- A quick question
+- One thing I noticed
+- A quick thought
+- Quick note
+- Something I noticed
+- Small question
+
+Keep subject lines varied across a batch. Do not reuse one subject for every draft. Do not make them clever, promotional, dramatic or complicated.
 
 Do not create variation by inventing facts.
 
@@ -197,7 +220,7 @@ Do not create variation by inventing facts.
 
 This is a tone and structure reference, not text to copy repeatedly.
 
-Subject: Quick question about your Google reviews
+Subject: Quick question
 
 Hi,
 
@@ -213,7 +236,7 @@ I've put together a very simple system that helps dental practices ask more of t
 
 There's almost nothing for you to manage. Used consistently, I'm convinced it can make a real difference to how your practice looks on Google over time.
 
-I set everything up and handle the rest. It's £34 per month with no long-term commitment.
+I set everything up and handle the rest. It's 34 per month with no long-term commitment.
 
 Want me to show you quickly how it works?
 
@@ -234,7 +257,9 @@ Confirm:
 - Name and email not excluded
 - Same mandatory sales skeleton and order
 - Natural British English
-- Exact country price
+- Exact number-only monthly price: 34 per month
+- No currency symbol, currency code, abbreviation or currency name anywhere in subject or body
+- Subject is short, neutral and varied, with no mention of Google, reviews, ratings, reputation, SEO, product, offer or price
 - No long-term commitment
 - Exact Michael Berg signature
 - Draft only, never send
