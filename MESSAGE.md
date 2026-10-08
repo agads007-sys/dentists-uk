@@ -18,7 +18,8 @@ Every prospect must satisfy ALL of these conditions:
 4. Current Google or Google Maps review count is between 2 and 25 inclusive.
 5. The exact current review count must be verified. Never estimate it and never rely on an obviously stale count.
 6. An appropriate contact email must be officially published by the practice or its official organisation. Never guess an address.
-7. Before selection, both the practice name and email address must be checked against the campaign exclusion log and the in-memory exclusions for the current run.
+7. The verified Google review count and the officially published email do NOT need to appear on the same page or come from the same source. It is valid to verify the current review count from Google / Google Maps and verify the email separately from the practice's official website or official organisation, provided the practice identity and location clearly match.
+8. Before selection, both the practice name and email address must be checked against the campaign exclusion log and the in-memory exclusions for the current run.
 
 Speed rule: once a prospect satisfies every mandatory condition and is quickly verifiable, select it and move to drafting. Lower review counts are only a preference among readily available eligible prospects. Never continue searching solely to replace an already valid prospect with one that has fewer reviews.
 
@@ -28,7 +29,7 @@ Do not build or calculate a lead score. Do not add extra research dimensions tha
 
 The practice must appear currently active during normal verification. If it is clearly permanently closed, inactive, no longer operating normally, or clearly not accepting patients, skip it. Do not perform a separate investigation just to establish activity.
 
-If any mandatory detail is difficult to verify quickly, skip the candidate and move on.
+If any mandatory detail is difficult to verify quickly, skip that candidate and move on to another practice. Do not treat a difficult candidate, a weak town, or an unproductive search query as a reason to end the run.
 
 ## Persistent exclusions
 
@@ -53,22 +54,51 @@ Do not add city, review count, marketing notes or other research fields to the e
 
 ## Batch workflow
 
-Work in batches of 5 successful drafts.
+The target is exactly 25 NEW successful Gmail drafts per standard run.
 
-For each batch:
+Work operationally in groups of 5 successful drafts for logging and Gmail-account balancing, but DO NOT wait until 5 prospects have been found before drafting.
 
-1. Research only enough prospects to obtain 5 valid candidates.
-2. Verify eligibility and deduplicate before selection.
-3. Immediately add each selected practice name and email to the in-memory dedupe sets.
-4. Create 5 Gmail drafts.
-5. Confirm each draft was actually created.
-6. Append only successful draft recipients to `data/exclusions-log.txt`.
+For each valid prospect:
+
+1. Verify every mandatory eligibility rule and deduplicate it.
+2. Immediately add the practice name and email to the in-memory dedupe sets.
+3. Create the Gmail draft immediately.
+4. Confirm the draft was actually created.
+5. Count it toward the current group only after successful draft creation.
+
+Whenever 5 new successful drafts have accumulated:
+
+6. Append those 5 successful recipients to `data/exclusions-log.txt`.
 7. Commit the updated exclusion log.
-8. Continue directly to the next batch.
+8. Continue directly with the next prospects.
+
+If fewer than 5 valid prospects have been found so far, KEEP RESEARCHING. A partially filled group is not a stopping condition.
 
 Never log a prospect whose Gmail draft failed.
 
-For a standard run, continue until exactly 25 NEW successful drafts have been created unless a genuine technical limitation prevents completion.
+## CONTINUATION RULE — DO NOT STOP EARLY
+
+A standard run is not complete until exactly 25 NEW successful drafts have been created and logged.
+
+Do not stop merely because:
+- one city or town produces few eligible practices
+- several practices lack published emails
+- several review counts are outside the range
+- an initial group of searches is unproductive
+- fewer than 5 valid prospects are currently available
+- the first search strategy does not produce enough candidates
+- research has already covered many websites
+- finding the remaining prospects requires moving to more cities or towns
+
+When a search area becomes unproductive, move immediately to another genuine city or town in the same country and continue.
+
+Use multiple search formulations and keep prospecting across the country. Do not repeatedly investigate one difficult practice.
+
+"Not enough verified prospects found yet" is NOT a genuine technical limitation.
+
+Only end below 25 if an actual tool, account, connector, or access failure prevents further research or draft creation after reasonable retries. If research tools are still functioning, continue researching.
+
+A partial result such as 0/25, 1/25, 4/25, or 18/25 is not an acceptable completed run while research and Gmail tools remain available.
 
 ## Gmail distribution
 
