@@ -171,3 +171,8 @@ hello@hiwse.co.uk | Hiwse
 info@1stoplettings.co.uk | 1 Stop Lettings Agents in Aberystwyth
 info@hostwales.co.uk | Host Wales
 charles@raw-rees.co.uk | Jim Raw Rees & Co
+llandrindod@mccartneys.co.uk | McCartneys LLP Llandrindod Wells
+builth@mccartneys.co.uk | McCartneys LLP Builth Wells
+info@propertymidwales.co.uk | Management Services
+lampeter@morgananddavies.co.uk | Morgan & Davies Lampeter
+mail@westwaleslettings.com | West Wales Lettings
