@@ -4,7 +4,9 @@
 
 DRAFTS ONLY. NEVER SEND EMAILS AUTOMATICALLY.
 
-This repository is only for dental practices physically located in United Kingdom. Never use prospects or exclusions from another country campaign.
+This repository is only for businesses physically located in the United Kingdom. Never use prospects or exclusions from another country campaign.
+
+Current target industry: dentists and dental practices. When the user says to switch industries for this country, change only this line to the new industry so the choice carries over to future runs. If the user names an industry for a one-off run, use it for that run without changing this line. Adapt prospect searches and email wording to the selected industry.
 
 The objective is speed, verification and natural writing. Do not search for perfect prospects. Use the first suitable prospects that can be verified quickly.
 
@@ -12,24 +14,24 @@ The objective is speed, verification and natural writing. Do not search for perf
 
 Every prospect must satisfy ALL of these conditions:
 
-1. Dentist, orthodontist or dental practice only.
+1. Business must belong to the selected industry. Do not include unrelated businesses.
 2. Physically located in United Kingdom.
 3. Located in a genuine city or town. Small towns are allowed. Villages, hamlets, isolated rural locations and genuinely rural settlements without town character are excluded. If this cannot be verified confidently, skip the prospect.
 4. Current Google or Google Maps review count is between 2 and 25 inclusive.
 5. The exact current review count must be verified. Never estimate it and never rely on an obviously stale count.
-6. An appropriate contact email must be officially published by the practice or its official organisation. Never guess an address.
-7. The verified Google review count and the officially published email do NOT need to appear on the same page or come from the same source. It is valid to verify the current review count from Google / Google Maps and verify the email separately from the practice's official website or official organisation, provided the practice identity and location clearly match.
-8. Before selection, both the practice name and email address must be checked against the campaign exclusion log and the in-memory exclusions for the current run.
+6. An appropriate contact email must be officially published by the business or its official organisation. Never guess an address.
+7. The verified Google review count and the officially published email do NOT need to appear on the same page or come from the same source. It is valid to verify the current review count from Google / Google Maps and verify the email separately from the business's official website or official organisation, provided the business identity and location clearly match.
+8. Before selection, both the business name and email address must be checked against the campaign exclusion log and the in-memory exclusions for the current run.
 
 Speed rule: once a prospect satisfies every mandatory condition and is quickly verifiable, select it and move to drafting. Lower review counts are only a preference among readily available eligible prospects. Never continue searching solely to replace an already valid prospect with one that has fewer reviews.
 
-Visible marketing activity is only a secondary prioritisation signal. If active advertising, promotional pages, cosmetic treatment marketing, SEO/local landing pages, active social media or strong booking calls-to-action are obvious during normal verification, that can favour a prospect. Do not perform separate marketing research just to score prospects. Never invent marketing activity.
+Visible marketing activity is only a secondary prioritisation signal. If active advertising, promotional pages, SEO/local landing pages, active social media or clear calls-to-action are obvious during normal verification, that can favour a prospect. Do not perform separate marketing research just to score prospects. Never invent marketing activity.
 
 Do not build or calculate a lead score. Do not add extra research dimensions that are not required by this file.
 
-The practice must appear currently active during normal verification. If it is clearly permanently closed, inactive, no longer operating normally, or clearly not accepting patients, skip it. Do not perform a separate investigation just to establish activity.
+The business must appear currently active during normal verification. If it is clearly permanently closed, inactive, no longer operating normally, or skip it. Do not perform a separate investigation just to establish activity.
 
-If any mandatory detail is difficult to verify quickly, skip that candidate and move on to another practice. Do not treat a difficult candidate, a weak town, or an unproductive search query as a reason to end the run.
+If any mandatory detail is difficult to verify quickly, skip that candidate and move on to another business. Do not treat a difficult candidate, a weak town, or an unproductive search query as a reason to end the run.
 
 ## Persistent exclusions
 
@@ -39,18 +41,18 @@ The only persistent deduplication file for normal runs is:
 
 Each successful drafted prospect is stored as:
 
-`email@example.com | Practice Name`
+`email@example.com | Business Name`
 
 At the beginning of a run, read this file once and build two in-memory sets from it:
 
 - normalised email addresses
-- normalised practice names
+- normalised business names
 
-As soon as a prospect is selected, immediately add both its email and practice name to the in-memory sets so it cannot appear again during the same run.
+As soon as a prospect is selected, immediately add both its email and business name to the in-memory sets so it cannot appear again during the same run.
 
 Do not load exclusion files from another repository or another country.
 
-Do not add city, review count, marketing notes or other research fields to the exclusion log. Keep the hot dedupe data minimal.
+Do not add city, industry, review count, marketing notes or other research fields to the exclusion log. Keep the hot dedupe data minimal.
 
 ## Batch workflow
 
@@ -61,7 +63,7 @@ Work operationally in groups of 5 successful drafts for logging and Gmail-accoun
 For each valid prospect:
 
 1. Verify every mandatory eligibility rule and deduplicate it.
-2. Immediately add the practice name and email to the in-memory dedupe sets.
+2. Immediately add the business name and email to the in-memory dedupe sets.
 3. Create the Gmail draft immediately.
 4. Confirm the draft was actually created.
 5. Count it toward the current group only after successful draft creation.
@@ -81,8 +83,8 @@ Never log a prospect whose Gmail draft failed.
 A standard run is not complete until exactly 25 NEW successful drafts have been created and logged.
 
 Do not stop merely because:
-- one city or town produces few eligible practices
-- several practices lack published emails
+- one city or town produces few eligible businesses
+- several businesses lack published emails
 - several review counts are outside the range
 - an initial group of searches is unproductive
 - fewer than 5 valid prospects are currently available
@@ -92,7 +94,7 @@ Do not stop merely because:
 
 When a search area becomes unproductive, move immediately to another genuine city or town in the same country and continue.
 
-Use multiple search formulations and keep prospecting across the country. Do not repeatedly investigate one difficult practice.
+Use multiple search formulations and keep prospecting across the country. Do not repeatedly investigate one difficult business.
 
 "Not enough verified prospects found yet" is NOT a genuine technical limitation.
 
@@ -112,17 +114,17 @@ DRAFTS ONLY. NEVER SEND.
 
 Every email must preserve this exact logical order. Natural wording may vary, but the reasoning and order must not.
 
-1. Michael found the dental practice while looking at dentists on Google in the area.
-2. Mention the practice's exact CURRENT VERIFIED Google review count.
-3. Say that Michael also looked at other nearby dental practices and there is clearly room to build the practice's review count. Do not quote competitor numbers unless separately verified.
-4. Explain why this matters to patients comparing several dentists on Google.
+1. Michael found the business while looking at businesses in the selected industry on Google in the area.
+2. Mention the business's exact CURRENT VERIFIED Google review count.
+3. Say that Michael also looked at other nearby businesses and there is clearly room to build the business's review count. Do not quote competitor numbers unless separately verified.
+4. Explain why this matters to customers comparing several businesses in the selected industry on Google.
 5. Explain that reviews can also contribute to local visibility on Google. Never promise rankings.
 6. Naturally say that this is why Michael is getting in touch.
-7. Introduce a very simple system for asking real patients for Google reviews.
-8. After an appointment, the practice enters the patient's mobile number.
-9. The patient receives an SMS with a direct link to the practice's Google profile and can leave a review immediately.
-10. Emphasise that this requires almost no work from the practice.
-11. State with genuine conviction that consistent use can make a meaningful difference to the practice's Google presence over time.
+7. Introduce a very simple system for asking real customers for Google reviews.
+8. After an appropriate appointment, completed service or transaction for the selected industry, the business enters the customer's mobile number with permission.
+9. The customer receives an SMS with a direct link to the business's Google profile and can leave a review immediately.
+10. Emphasise that this requires almost no work from the business.
+11. State with genuine conviction that consistent use can make a meaningful difference to the business's Google presence over time.
 12. Michael sets everything up and handles the rest.
 13. State the exact price as **34 per month**. The outbound email must contain the number only.
 14. State that there is no long-term commitment.
@@ -151,13 +153,13 @@ Incorrect formats include any version that identifies the currency.
 
 Before creating a Gmail draft, scan the entire subject and body. If any currency symbol, currency code, abbreviation or currency name appears, rewrite it before saving the draft.
 
-Never promise a specific Google position, number of patients, number of reviews or revenue increase.
+Never promise a specific Google position, number of customers, number of reviews or revenue increase.
 
 ## Voice
 
 Write in natural contemporary British English.
 
-The email should sound like Michael personally noticed the practice and wrote a short, thoughtful message himself.
+The email should sound like Michael personally noticed the business and wrote a short, thoughtful message himself.
 
 Direct, conversational and confident.
 Professional, but not formal.
@@ -171,8 +173,8 @@ No headings or bullet points inside the email.
 Use short natural paragraphs and simple punctuation.
 Avoid em dashes, semicolons and stylistic colons.
 
-Use British spelling and ordinary UK dental-practice terminology.
-Prefer "dental practice" or "practice". Never call it a "dental office".
+Use British spelling and natural UK terminology for the selected industry.
+Use natural terms for the selected industry, such as "practice", "clinic", "agency" or "business" when appropriate.
 Use "mobile number", not "cell number".
 Keep the tone understated and matter-of-fact rather than enthusiastic or Americanised.
 
@@ -194,7 +196,7 @@ Do not write phrases such as:
 - boost your business
 - drive growth
 - game changer
-- take your practice to the next level
+- take your business to the next level
 - I'd love to connect
 - touch base
 - circle back
@@ -202,7 +204,7 @@ Do not write phrases such as:
 Prefer concrete language.
 
 Bad:
-"Your practice has a tremendous opportunity to significantly enhance its online reputation."
+"Your business has a tremendous opportunity to significantly enhance its online reputation."
 
 Good:
 "There's still plenty of room to build your review count."
@@ -211,7 +213,7 @@ Bad:
 "Our innovative solution streamlines the review-generation journey."
 
 Good:
-"After an appointment, you enter the patient's mobile number and they get a text with the link to your Google profile."
+"After completing a service, you enter the customer's mobile number with permission and they get a text with the link to your Google profile."
 
 ## Natural variation
 
@@ -222,7 +224,7 @@ Within the same batch, no two drafts may reuse the same opening sentence, review
 Vary naturally:
 - the opening
 - the way the review gap is described
-- the patient-comparison explanation
+- the customer-comparison explanation
 - the local-Google explanation
 - the simple SMS explanation
 - the low-effort sentence
@@ -254,17 +256,17 @@ Subject: Quick question
 
 Hi,
 
-I came across your practice while looking at dentists in your area on Google and noticed you've currently got 8 reviews.
+I came across your business while looking at providers in your area on Google and noticed you've currently got 8 reviews.
 
-I had a look at a few other practices nearby as well. There's still quite a bit of room to build that number up, and it's something patients notice when they're comparing dentists.
+I had a look at a few other businesses nearby as well. There's still quite a bit of room to build that number up, and it's something customers notice when they're comparing similar businesses.
 
-When someone is choosing a new dentist, they'll often look through several Google profiles before deciding. A practice with more genuine reviews can feel more established and reassuring at a glance. Reviews can also play a part in local visibility on Google.
+When someone is choosing a local service provider, they'll often look through several Google profiles before deciding. A business with more genuine reviews can feel more established and reassuring at a glance. Reviews can also play a part in local visibility on Google.
 
 That's why I'm getting in touch.
 
-I've put together a very simple system that helps dental practices ask more of their real patients for reviews. After an appointment, you enter the patient's mobile number. They get an SMS with a direct link to your Google profile and can leave a review straight away.
+I've put together a very simple system that helps businesses ask more of their real customers for reviews. After an appropriate appointment, completed service or transaction, you enter the customer's mobile number with permission. They get an SMS with a direct link to your Google profile and can leave a review straight away.
 
-There's almost nothing for you to manage. Used consistently, I'm convinced it can make a real difference to how your practice looks on Google over time.
+There's almost nothing for you to manage. Used consistently, I'm convinced it can make a real difference to how your business looks on Google over time.
 
 I set everything up and handle the rest. It's 34 per month with no long-term commitment.
 
@@ -279,10 +281,10 @@ Confirm:
 
 - Correct country
 - Genuine city or town
-- Dentist / orthodontist / dental practice only
+- Business belongs to the selected industry
 - Current Google review count between 2 and 25 inclusive
 - Exact count verified
-- Practice appears currently active
+- Business appears currently active
 - Officially published contact email
 - Name and email not excluded
 - Same mandatory sales skeleton and order
